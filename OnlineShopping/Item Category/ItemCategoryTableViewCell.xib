@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCategoryTableViewCell" rowHeight="320" id="KGk-i7-Jjw" customClass="ItemCategoryTableViewCell" customModule="OnlineShopping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-WD-KtG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-tv-eve">
+                                <rect key="frame" x="60" y="24" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NP4-cm-fUi"/>
+                                    <constraint firstAttribute="width" secondItem="Hjh-tv-eve" secondAttribute="height" multiplier="1:1" id="qXs-eB-EFt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWo-tf-88s">
+                                <rect key="frame" x="8" y="248" width="304" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hjh-tv-eve" firstAttribute="top" secondItem="Zur-WD-KtG" secondAttribute="top" constant="24" id="5Cy-jz-NI8"/>
+                            <constraint firstAttribute="trailing" secondItem="Hjh-tv-eve" secondAttribute="trailing" constant="60" id="Fic-lu-Jpn"/>
+                            <constraint firstItem="Hjh-tv-eve" firstAttribute="leading" secondItem="Zur-WD-KtG" secondAttribute="leading" constant="60" id="QM4-Nr-ELv"/>
+                            <constraint firstItem="rWo-tf-88s" firstAttribute="leading" secondItem="Zur-WD-KtG" secondAttribute="leading" constant="8" id="aXd-PF-BFD"/>
+                            <constraint firstAttribute="bottom" secondItem="rWo-tf-88s" secondAttribute="bottom" constant="52" id="cia-QC-wkO"/>
+                            <constraint firstAttribute="trailing" secondItem="rWo-tf-88s" secondAttribute="trailing" constant="8" id="kaM-8y-MeL"/>
+                            <constraint firstItem="rWo-tf-88s" firstAttribute="top" secondItem="Hjh-tv-eve" secondAttribute="bottom" constant="24" id="lzj-vB-DGd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zur-WD-KtG" secondAttribute="trailing" id="QBw-q9-7rz"/>
+                    <constraint firstAttribute="bottom" secondItem="Zur-WD-KtG" secondAttribute="bottom" id="Vs9-tq-eeE"/>
+                    <constraint firstItem="Zur-WD-KtG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bX7-0H-tCi"/>
+                    <constraint firstItem="Zur-WD-KtG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gSg-eu-1r9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemCategoryImageView" destination="Hjh-tv-eve" id="89c-re-OLB"/>
+                <outlet property="itemCategoryLabel" destination="rWo-tf-88s" id="CkE-SU-wrs"/>
+            </connections>
+            <point key="canvasLocation" x="-146.37681159420291" y="70.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

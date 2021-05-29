@@ -14,6 +14,9 @@
 		60EE745326612B6B006D497A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EE745126612B6B006D497A /* HomeViewController.xib */; };
 		60EE7459266144E5006D497A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE7457266144E5006D497A /* ItemDetailViewController.swift */; };
 		60EE745A266144E6006D497A /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EE7458266144E5006D497A /* ItemDetailViewController.xib */; };
+		60EE745F2661DBC7006D497A /* ItemCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE745D2661DBC7006D497A /* ItemCategoryTableViewCell.swift */; };
+		60EE74602661DBC7006D497A /* ItemCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EE745E2661DBC7006D497A /* ItemCategoryTableViewCell.xib */; };
+		60EE74652661FACC006D497A /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE74642661FACB006D497A /* ItemCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		60EE745126612B6B006D497A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		60EE7457266144E5006D497A /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		60EE7458266144E5006D497A /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		60EE745D2661DBC7006D497A /* ItemCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		60EE745E2661DBC7006D497A /* ItemCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		60EE74642661FACB006D497A /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		60EE743826612A8E006D497A /* OnlineShopping */ = {
 			isa = PBXGroup;
 			children = (
+				60EE74632661FA9D006D497A /* Model */,
+				60EE745C2661DBA3006D497A /* Item Category */,
 				60EE743926612A8E006D497A /* AppDelegate.swift */,
 				60EE744226612A95006D497A /* Assets.xcassets */,
 				60EE744426612A95006D497A /* LaunchScreen.storyboard */,
@@ -68,6 +76,23 @@
 				60EE7458266144E5006D497A /* ItemDetailViewController.xib */,
 			);
 			path = OnlineShopping;
+			sourceTree = "<group>";
+		};
+		60EE745C2661DBA3006D497A /* Item Category */ = {
+			isa = PBXGroup;
+			children = (
+				60EE745D2661DBC7006D497A /* ItemCategoryTableViewCell.swift */,
+				60EE745E2661DBC7006D497A /* ItemCategoryTableViewCell.xib */,
+			);
+			path = "Item Category";
+			sourceTree = "<group>";
+		};
+		60EE74632661FA9D006D497A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60EE74642661FACB006D497A /* ItemCategory.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EE74602661DBC7006D497A /* ItemCategoryTableViewCell.xib in Resources */,
 				60EE744626612A95006D497A /* LaunchScreen.storyboard in Resources */,
 				60EE744326612A95006D497A /* Assets.xcassets in Resources */,
 				60EE745A266144E6006D497A /* ItemDetailViewController.xib in Resources */,
@@ -143,6 +169,8 @@
 			files = (
 				60EE743A26612A8E006D497A /* AppDelegate.swift in Sources */,
 				60EE745226612B6B006D497A /* HomeViewController.swift in Sources */,
+				60EE745F2661DBC7006D497A /* ItemCategoryTableViewCell.swift in Sources */,
+				60EE74652661FACC006D497A /* ItemCategory.swift in Sources */,
 				60EE7459266144E5006D497A /* ItemDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

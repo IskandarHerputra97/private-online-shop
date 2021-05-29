@@ -46,6 +46,10 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="128" id="s9B-BL-3MO"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="gor-jY-uRp"/>
+                                        <outlet property="delegate" destination="-1" id="WPZ-hn-Caq"/>
+                                    </connections>
                                 </tableView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo Bulan Ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-mr-bSC">
                                     <rect key="frame" x="8" y="377" width="359" height="21"/>
@@ -53,7 +57,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-xd-5UT">
+                                <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-xd-5UT">
                                     <rect key="frame" x="8" y="418" width="359" height="200"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
