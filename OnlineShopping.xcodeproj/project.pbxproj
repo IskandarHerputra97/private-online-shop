@@ -12,6 +12,8 @@
 		60EE744626612A95006D497A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EE744426612A95006D497A /* LaunchScreen.storyboard */; };
 		60EE745226612B6B006D497A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE745026612B6B006D497A /* HomeViewController.swift */; };
 		60EE745326612B6B006D497A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EE745126612B6B006D497A /* HomeViewController.xib */; };
+		60EE7459266144E5006D497A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE7457266144E5006D497A /* ItemDetailViewController.swift */; };
+		60EE745A266144E6006D497A /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EE7458266144E5006D497A /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		60EE744726612A95006D497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60EE745026612B6B006D497A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		60EE745126612B6B006D497A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		60EE7457266144E5006D497A /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		60EE7458266144E5006D497A /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				60EE744726612A95006D497A /* Info.plist */,
 				60EE745026612B6B006D497A /* HomeViewController.swift */,
 				60EE745126612B6B006D497A /* HomeViewController.xib */,
+				60EE7457266144E5006D497A /* ItemDetailViewController.swift */,
+				60EE7458266144E5006D497A /* ItemDetailViewController.xib */,
 			);
 			path = OnlineShopping;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			files = (
 				60EE744626612A95006D497A /* LaunchScreen.storyboard in Resources */,
 				60EE744326612A95006D497A /* Assets.xcassets in Resources */,
+				60EE745A266144E6006D497A /* ItemDetailViewController.xib in Resources */,
 				60EE745326612B6B006D497A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			files = (
 				60EE743A26612A8E006D497A /* AppDelegate.swift in Sources */,
 				60EE745226612B6B006D497A /* HomeViewController.swift in Sources */,
+				60EE7459266144E5006D497A /* ItemDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
