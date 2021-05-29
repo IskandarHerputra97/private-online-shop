@@ -22,17 +22,28 @@ class HomeViewController: UIViewController {
         ItemCategory(name: "Baby Care"),
         ItemCategory(name: "Beauty Care"),
     ]
+    
+    private var promoCellViewModel: [PromoTableViewCellViewModel] = []
+    private var promoDataSource: [Promo] = [
+        Promo(promoDiscount: "10%", promoItemTitle: "Promo Item", promoItemPrice: "Rp 50.000"),
+        Promo(promoDiscount: "10%", promoItemTitle: "Promo Item", promoItemPrice: "Rp 50.000"),
+        Promo(promoDiscount: "10%", promoItemTitle: "Promo Item", promoItemPrice: "Rp 50.000"),
+        Promo(promoDiscount: "10%", promoItemTitle: "Promo Item", promoItemPrice: "Rp 50.000"),
+        Promo(promoDiscount: "10%", promoItemTitle: "Promo Item", promoItemPrice: "Rp 50.000")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         fetchItemCategories()
+        fetchPromoItem()
     }
     
     //MARK: - Setup
     private func setupView() {
         title = "APLIKASI BELANJA ONLINE"
         itemCategoryTableview.register(UINib(nibName: "ItemCategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "ItemCategoryTableViewCell")
+        promoItemTableView.register(UINib(nibName: "PromoTableViewCell", bundle: nil), forCellReuseIdentifier: "PromoTableViewCell")
     }
     
     //MARK: - Private
@@ -48,6 +59,23 @@ class HomeViewController: UIViewController {
         
         if self.itemCategoryCellViewModel.count > 0 {
             self.itemCategoryTableview.reloadData()
+        }
+    }
+    
+    private func fetchPromoItem() {
+        var promoCellViewModel: [PromoTableViewCellViewModel] = []
+        
+        for item in promoDataSource {
+            let viewModel: PromoTableViewCellViewModel = PromoTableViewCellViewModel(promoDiscount: item.promoDiscount,
+                                                                                     promoItemImage: UIImage(systemName: "dollarsign.circle"),
+                                                                                     promoItemTitle: item.promoItemTitle,
+                                                                                     promoItemPrice: item.promoItemPrice)
+            promoCellViewModel.append(viewModel)
+        }
+        self.promoCellViewModel.append(contentsOf: promoCellViewModel)
+        
+        if self.promoCellViewModel.count > 0 {
+            self.promoItemTableView.reloadData()
         }
     }
 }
@@ -73,7 +101,12 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         }
         else if tableView.tag == 1 {
-            
+            guard indexPath.row < itemCategoryCellViewModel.count, let cell: PromoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PromoTableViewCell") as? PromoTableViewCell else {
+                return UITableViewCell()
+            }
+            let viewModel: PromoTableViewCellViewModel = promoCellViewModel[indexPath.row]
+            cell.setupContent(content: viewModel)
+            return cell
         }
         return UITableViewCell()
     }
