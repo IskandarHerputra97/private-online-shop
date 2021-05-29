@@ -86,7 +86,7 @@ extension HomeViewController: UITableViewDataSource {
             return itemCategoryCellViewModel.count
         }
         else if tableView.tag == 1 {
-            return 0
+            return promoCellViewModel.count
         }
         return 0
     }
@@ -101,7 +101,7 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         }
         else if tableView.tag == 1 {
-            guard indexPath.row < itemCategoryCellViewModel.count, let cell: PromoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PromoTableViewCell") as? PromoTableViewCell else {
+            guard indexPath.row < promoCellViewModel.count, let cell: PromoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PromoTableViewCell") as? PromoTableViewCell else {
                 return UITableViewCell()
             }
             let viewModel: PromoTableViewCellViewModel = promoCellViewModel[indexPath.row]
