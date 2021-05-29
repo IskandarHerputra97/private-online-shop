@@ -113,5 +113,8 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let itemDetailVC: ItemDetailViewController = ItemDetailViewController()
+        navigationController?.pushViewController(itemDetailVC, animated: true)
+    }
 }
